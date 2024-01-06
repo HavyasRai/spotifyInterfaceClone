@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main flex just-center bg-black col-white ">
+        <div class="left col-white ">
+            <ul class="flex bg-grey flex-col m1 just-center rounded p2">
+                <li class="home pointer "><img class="flex invert icon" src="images/homesvg.svg" alt="home">Home</li>
+                <li class="search pointer op-5"><img class="flex invert icon" src="images/searchsvg.svg"
+                        alt="search">Search
+                </li>
+            </ul>
+            <ul class="flex bg-grey flex-col m1 just-center rounded p2">
+                <div>
+                    <div class="">
+                        <li><img class="invert icon" src="images/librarysvg.svg" alt="library">
+                            <h4 class="m-r-2">Your Library</h4>
+                            <div class="flx just-center items-center float-r">
+                                <i class="fa-solid fa-plus pointer"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="fa-solid fa-arrow-right pointer"></i>
+                            </div>
+                    </div>
+                    <div class="flex m1 m-l-0 items-center ">
+                        <button class="btn m2 pointer">Playlist</button>
+                        <button class="btn m2 pointer">Artists</button>
+                        <button class="btn m2 pointer">Albums</button>
+                    </div>
+                    <div class="flex just-between op-6 f-4">
+                        <li><img class="invert icon pointer" src="images/searchsvg.svg" alt=""></li>
+                        <li class="f-4 pointer">Recents<i class="fa-solid fa-list "></i></li>
+                    </div>
+                    <div class="flex flex-col m2">
+                        <li class="side-card">
+                            <div class="flex w-full">
+                                <img class="w-10 l-rounded m1"
+                                    src="https://misc.scdn.co/liked-songs/liked-songs-640.png" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <div>
+                                    <h4>Liked songs</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-card">
+                            <div class="flex w-full">
+                                <img class="w-10 l-rounded m1"
+                                    src="	https://i.scdn.co/image/ab67616100005174dd9861f139278c57ca97f0be" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <div>
+                                    <h4>Vijaya Prakash</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-card">
+                            <div class="flex w-full">
+                                <img class="w-10 l-rounded m1"
+                                    src="	https://i.scdn.co/image/ab67616d0000b2734ee83b1e826a34b795799e13                                "
+                                    alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <div>
+                                    <h4>Ratata (from "Leo")</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-card">
+                            <div class="flex w-full">
+                                <img class="w-10 l-rounded m1"
+                                    src="https://i.scdn.co/image/ab67616100005174088c2f2eb5ef85ebf8aedae3" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <div>
+                                    <h4>Sanjith Hegde</h4>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    </li>
+                </div>
+            </ul>
+            <div class="music-bar flex bg-grey rounded m1" id="music-bar">
+                <div class="m-left">
+                    <img id="m-bars-img"
+                        src="https://c.saavncdn.com/022/Heeriye-feat-Arijit-Singh-Hindi-2023-20230928050405-500x500.jpg"
+                        alt="">
+                </div>
+                <div class="m-right">
+                    <div class="m-r-det">
+                        <h3 id="m-s-name">Spotify</h3>
+                    </div>
+                    <div class="m-r-bar">
+                        <input type="range" min="0" max="100" value="0" name="" id="m-range">
+                    </div>
+                    <div class="m-r-btns flex just-center gap2">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                        <i class="fa-solid fa-play" id="fa-play"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-volume-xmark fa-spin-pulse"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right flex flex-col bg-grey m2 rounded">
+            <div class="top bg-grey">
+                <div class="flex top-btns">
+                    <div class="btn-group">
+                        <button class="top-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="top-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="flex search-box">
+                        <input type="text" name="" placeholder="Search here" id="search-text">
+                        <button class="search-btn" onclick="Runfetch()">Search <i
+                                class="fa-solid fa-search"></i></button>
+                    </div>
+                    <div class="top-r-btn">
+                        <button class="btn-top">Explore Premium</button>
+                        <button class="btn-top">Install App &nbsp;&nbsp;<i class="fa-solid fa-download"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom flex just-center">
+                <div class="card-container" id="cardContainer">
+                    <!-- <div class="card flex flex-col just-between">
+                        <div class="c-top">
+                            <img src="https://c.saavncdn.com/290/Malayalam-Trending-Songs-Malayalam-2022-20220728211021-500x500.jpg" alt="">
+                        </div>
+                        <div class="c-bot">
+                            <h2>Ra Ra...</h2>
+                            <h4>Tippu, Bhadra Rajin...</h4>
+                        </div>
+                        <div class="layer">
+                           <button class="play-btn"> <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/left.js"></script>
+
+</html>
+<!-- <div class="card flex flex-col just-between">
+    <div class="c-top">
+        <img src="https://c.saavncdn.com/290/Malayalam-Trending-Songs-Malayalam-2022-20220728211021-500x500.jpg" alt="">
+    </div>
+    <div class="c-bot">
+        <h2>Ra Ra...</h2>
+        <h4>Tippu, Bhadra Rajin...</h4>
+    </div>
+</div> -->

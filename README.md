@@ -3,11 +3,11 @@
 <p>Still in the Devlpement stage...</p>
 
 <h2>Used Technoogies</h2>
-<li><h4>HTML</h4></li>
-<li><h4>CSS</h4></li>
-<li><h4>JS</h4></li>
+<li><b>HTML</b></li>
+<li><b>CSS</b></li>
+<li><b>JS</b></li>
 
 <h2>Functionalities Available</h2>
-<li><h4>Home Bar</h4></li>
-<li><h4>Searching of Songs</h4></li>
-<li><h4>Music Bar control</h4></li>
+<li><b>Home Bar</b></li>
+<li><b>Searching of Songs</b></li>
+<li><b>Music Bar control</b></li>

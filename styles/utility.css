@@ -1,3 +1,7 @@
+a {
+    text-decoration: none   ;
+}
+
 .bg-black {
     background-color: #000000;
 }
@@ -29,6 +33,7 @@
 .op-6 {
     opacity: .6;
 }
+
 .op-5 {
     opacity: .5;
 }
@@ -92,9 +97,11 @@
 .gap3 {
     gap: 10px;
 }
+
 .gap2 {
     gap: 3rem;
 }
+
 .gap3 {
     gap: 10px;
 }
@@ -135,11 +142,11 @@
     height: auto;
     display: inline-flex;
 }
-.hidden
-{
+
+.hidden {
     display: none;
 }
-.liked 
-{
+
+.liked {
     color: red;
 }

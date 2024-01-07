@@ -17,72 +17,83 @@
         <div class="left col-white ">
             <ul class="flex bg-grey flex-col m1 just-center rounded p2">
                 <li class="home pointer "><img class="flex invert icon" src="images/homesvg.svg" alt="home">Home</li>
-                <li class="search pointer op-5"><img class="flex invert icon" src="images/searchsvg.svg"
-                        alt="search">Search
-                </li>
             </ul>
             <ul class="flex bg-grey flex-col m1 just-center rounded p2">
                 <div>
                     <div class="">
                         <li><img class="invert icon" src="images/librarysvg.svg" alt="library">
-                            <h4 class="m-r-2">Your Library</h4>
+                            <h4 class="m-r-2">Library</h4>
                             <div class="flx just-center items-center float-r">
                                 <i class="fa-solid fa-plus pointer"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <i class="fa-solid fa-arrow-right pointer"></i>
                             </div>
                     </div>
                     <div class="flex m1 m-l-0 items-center ">
-                        <button class="btn m2 pointer">Playlist</button>
-                        <button class="btn m2 pointer">Artists</button>
-                        <button class="btn m2 pointer">Albums</button>
+                        <button class="btn m2 pointer list-content">Lofi</button>
+                        <button class="btn m2 pointer list-content">Cover</button>
+                        <button class="btn m2 pointer list-content">BGM</button>
                     </div>
                     <div class="flex just-between op-6 f-4">
                         <li><img class="invert icon pointer" src="images/searchsvg.svg" alt=""></li>
-                        <li class="f-4 pointer">Recents<i class="fa-solid fa-list "></i></li>
+                        <li class="f-4 pointer">Intrests<i class="fa-solid fa-list "></i></li>
                     </div>
-                    <div class="flex flex-col m2">
+                    <div class="flex flex-col m2" id="top-list">
                         <li class="side-card">
                             <div class="flex w-full">
                                 <img class="w-10 l-rounded m1"
-                                    src="https://misc.scdn.co/liked-songs/liked-songs-640.png" alt="">
+                                    src="https://c.saavncdn.com/286/WMG_190295851286-English-2017-500x500.jpg" alt="">
                             </div>
                             <div class="flex flex-col">
                                 <div>
-                                    <h4>Liked songs</h4>
+                                    <h4 class="list-content">English</h4>
                                 </div>
                             </div>
                         </li>
                         <li class="side-card">
                             <div class="flex w-full">
                                 <img class="w-10 l-rounded m1"
-                                    src="	https://i.scdn.co/image/ab67616100005174dd9861f139278c57ca97f0be" alt="">
-                            </div>
-                            <div class="flex flex-col">
-                                <div>
-                                    <h4>Vijaya Prakash</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="side-card">
-                            <div class="flex w-full">
-                                <img class="w-10 l-rounded m1"
-                                    src="	https://i.scdn.co/image/ab67616d0000b2734ee83b1e826a34b795799e13                                "
+                                    src="https://c.saavncdn.com/092/ANIMAL-Hindi-2023-20231124191036-500x500.jpg"
                                     alt="">
                             </div>
                             <div class="flex flex-col">
                                 <div>
-                                    <h4>Ratata (from "Leo")</h4>
+                                    <h4 class="list-content">Hindi</h4>
                                 </div>
                             </div>
                         </li>
                         <li class="side-card">
                             <div class="flex w-full">
                                 <img class="w-10 l-rounded m1"
-                                    src="https://i.scdn.co/image/ab67616100005174088c2f2eb5ef85ebf8aedae3" alt="">
+                                    src="https://c.saavncdn.com/371/Hridayam-Malayalam-2021-20230803205617-500x500.jpg"
+                                    alt="">
                             </div>
                             <div class="flex flex-col">
                                 <div>
-                                    <h4>Sanjith Hegde</h4>
+                                    <h4 class="list-content">Malayalam</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-card">
+                            <div class="flex w-full">
+                                <img class="w-10 l-rounded m1"
+                                    src="https://c.saavncdn.com/427/Kantara-Kannada-2022-20230903212814-500x500.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <div>
+                                    <h4 class="list-content">Kannada</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-card">
+                            <div class="flex w-full">
+                                <img class="w-10 l-rounded m1"
+                                    src="https://c.saavncdn.com/187/Jailer-Tamil-2023-20230728081443-500x500.jpg"
+                                    alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <div>
+                                    <h4 class="list-content">Tamil</h4>
                                 </div>
                             </div>
                         </li>
@@ -104,10 +115,7 @@
                         <input type="range" min="0" max="100" value="0" name="" id="m-range">
                     </div>
                     <div class="m-r-btns flex just-center gap2">
-                        <i class="fa-solid fa-volume-xmark"></i>
                         <i class="fa-solid fa-play" id="fa-play"></i>
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-volume-xmark fa-spin-pulse"></i>
                     </div>
                 </div>
             </div>
@@ -129,8 +137,11 @@
                                 class="fa-solid fa-search"></i></button>
                     </div>
                     <div class="top-r-btn">
-                        <button class="btn-top">Explore Premium</button>
-                        <button class="btn-top">Install App &nbsp;&nbsp;<i class="fa-solid fa-download"></i></button>
+                        <a class="btn-top pointer">By Havyas U</a>
+                        <a href="https://github.com/havyasRai/spotifyInterfaceClone/" class="btn-top"><i
+                                class="fa-brands fa-github"> &nbsp;</i>Github</buttaon>
+                            <a href="https://www.linkedin.com/in/havyas-u-1220b3230/" class="btn-top"><i
+                                    class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a>
                     </div>
                 </div>
             </div>

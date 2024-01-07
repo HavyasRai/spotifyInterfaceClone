@@ -14,7 +14,7 @@ const Runfetch = () => {
 };
 const fetchData = async (key) => {
     try {
-        key = key ? key : "new";
+        key = key || "new";
         let res = await fetch(`https://saavn.me/search/songs?query=${key}&page=1&limit=100`);
         res = await res.json();
         data = res.data.results;
